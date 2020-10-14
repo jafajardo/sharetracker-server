@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb://share-list:Password123@ds029797.mlab.com:29797/share-list",
+  "jwtSecret": "mY_jWt_SecR3T_k3Y_1$_sUp3R_$3Cr3T"
+}
