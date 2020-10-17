@@ -7,6 +7,7 @@ const transactionRoutes = require("./routes/api/transactions");
 const priceRoutes = require("./routes/api/prices");
 const userRoutes = require("./routes/api/users");
 const authRoutes = require("./routes/api/auth");
+const healthRoutes = require("./routes/api/health");
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use("/api/transactions", transactionRoutes);
 app.use("/api/prices", priceRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/health", healthRoutes);
 
 const port = process.env.PORT || 5000;
 
