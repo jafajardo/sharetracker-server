@@ -16,6 +16,10 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
 });
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Headers", ["Content-Type", "x-auth-token"]);
+  next();
+});
 
 mongoose
   .connect(config.mongoURI, {
